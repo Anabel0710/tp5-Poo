@@ -1,0 +1,13 @@
+#BlueJ class context
+#Mon Sep 28 01:46:08 ART 2026
+comment0.target=SemiExclusivo
+comment0.text=\r\n Representa un cargo de car\u00E1cter semiexclusivo.\r\n\r\n Posee veinte horas semanales. Como m\u00EDnimo diez corresponden\r\n a docencia y las restantes pueden dedicarse a investigaci\u00F3n.\r\n\r\n @author Rocio Anabel Gonzalez y Rodriguez Mercedes Antonella\r\n @version 1.0 - 27/09/2026\r\n
+comment1.params=p_nombreCargo p_sueldoBasico p_anioIngreso p_horasInvestigacion
+comment1.target=SemiExclusivo(java.lang.String, double, int, int)
+comment1.text=\r\n Construye un cargo semiexclusivo.\r\n\r\n @param p_nombreCargo nombre del cargo\r\n @param p_sueldoBasico sueldo b\u00E1sico\r\n @param p_anioIngreso a\u00F1o de ingreso\r\n @param p_horasInvestigacion horas de investigaci\u00F3n, entre 0 y 10\r\n
+comment2.params=p_horas
+comment2.target=void setHorasDeInvestigacion(int)
+comment3.target=int getHorasDeInvestigacion()
+comment4.target=void mostrarCargo()
+comment4.text=\r\n Redefine el m\u00E9todo para agregar las horas de investigaci\u00F3n.\r\n
+numComments=5

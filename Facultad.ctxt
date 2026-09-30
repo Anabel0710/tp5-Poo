@@ -1,0 +1,22 @@
+#BlueJ class context
+#Mon Sep 28 01:46:08 ART 2026
+comment0.target=Facultad
+comment0.text=\r\n Representa una facultad con una colecci\u00F3n de profesores.\r\n\r\n La facultad debe conservar al menos un profesor.\r\n\r\n @author Rocio Anabel Gonzalez y Rodriguez Mercedes Antonella\r\n @version 1.0 - 27/09/2026\r\n
+comment1.params=p_nombre p_profesor
+comment1.target=Facultad(java.lang.String, Profesor)
+comment1.text=\r\n Construye una facultad con un profesor inicial.\r\n
+comment2.target=java.lang.String getNombre()
+comment3.target=java.util.ArrayList getProfesores()
+comment4.params=p_profesor
+comment4.target=void agregarProfesor(Profesor)
+comment4.text=\r\n Agrega un profesor a la facultad.\r\n
+comment5.params=p_profesor
+comment5.target=boolean quitarProfesor(Profesor)
+comment5.text=\r\n Quita un profesor siempre que la colecci\u00F3n no quede vac\u00EDa.\r\n\r\n @return true si el profesor pudo eliminarse\r\n
+comment6.target=double totalAPagar()
+comment6.text=\r\n Calcula el importe total que debe pagar la facultad.\r\n
+comment7.target=void nominaProfesores()
+comment7.text=\r\n Emite la n\u00F3mina de profesores.\r\n
+comment8.target=void listarProfesorCargos()
+comment8.text=\r\n Muestra cada profesor junto con sus cargos.\r\n
+numComments=9

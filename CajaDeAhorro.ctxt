@@ -1,0 +1,24 @@
+#BlueJ class context
+#Tue Sep 29 15:41:15 ART 2026
+comment0.target=CajaDeAhorro
+comment0.text=\r\n Representa una caja de ahorro con una cantidad limitada de \r\n extraccion. Hereda los datos y operaciones comunes de CuentaBancaria\r\n \r\n @author Rocio Anabel Gonzalez y Rodriguez Mercedes Antonella\r\n @version 2.0 - 28/09/2026\r\n
+comment1.params=p_nroCuenta p_titular
+comment1.target=CajaDeAhorro(int, Persona)
+comment1.text=Construye una caja de ahorro sin saldo inicial
+comment2.params=p_nroCuenta p_titular p_saldo
+comment2.target=CajaDeAhorro(int, Persona, double)
+comment2.text=Construye una caja de ahorro con saldo inicial
+comment3.params=p_extracciones
+comment3.target=void setExtraccionesPosibles(int)
+comment4.target=int getExtraccionesPosibles()
+comment5.params=p_importe
+comment5.target=boolean puedeExtraer(double)
+comment5.text=Exige el saldo suficiente y al menos una extraccion disponible
+comment6.target=void despuesDeExtraer()
+comment6.text=Descuenta una extraccion solamente cuando la operacion tuvo exito
+comment7.params=p_importe
+comment7.target=java.lang.String xQNoPuedeExtraer(double)
+comment7.text=Informa la causa particular del rechazo
+comment8.target=java.lang.String nombreCuenta()
+comment9.target=void mostrarDatosEspecificos()
+numComments=10

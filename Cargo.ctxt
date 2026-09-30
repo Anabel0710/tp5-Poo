@@ -1,0 +1,33 @@
+#BlueJ class context
+#Mon Sep 28 01:39:07 ART 2026
+comment0.target=Cargo
+comment0.text=\r\n Representa un cargo docente de car\u00E1cter simple.\r\n Un cargo simple posee diez horas semanales de docencia.\r\n\r\n @author Rocio Anabel Gonzalez y Rodriguez Mercedes Antonella\r\n @version 1.0 - 28/09/2026\r\n
+comment1.params=p_nombreCargo p_sueldoBasico p_anioIngreso
+comment1.target=Cargo(java.lang.String, double, int)
+comment1.text=\r\n Construye un cargo simple con diez horas de docencia.\r\n\r\n @param p_nombreCargo nombre del cargo y de la materia\r\n @param p_sueldoBasico sueldo b\u00E1sico\r\n @param p_anioIngreso a\u00F1o de ingreso al cargo\r\n
+comment10.target=int getHorasDeDocencia()
+comment11.target=int antiguedad()
+comment11.text=\r\n Calcula la antig\u00FCedad en el cargo.\r\n\r\n @return cantidad de a\u00F1os en el cargo\r\n
+comment12.target=double adicionalXAntiguedad()
+comment12.text=\r\n Calcula un adicional del 1% del sueldo b\u00E1sico por\r\n cada a\u00F1o de antig\u00FCedad.\r\n
+comment13.target=double sueldoDelCargo()
+comment13.text=\r\n Calcula el sueldo correspondiente al cargo.\r\n\r\n @return sueldo b\u00E1sico m\u00E1s adicional por antig\u00FCedad\r\n
+comment14.target=void mostrarCargo()
+comment14.text=\r\n Muestra los datos del cargo.\r\n Las subclases redefinen este m\u00E9todo para agregar\r\n informaci\u00F3n particular.\r\n
+comment2.params=p_nombreCargo p_sueldoBasico p_anioIngreso p_horasDeDocencia
+comment2.target=Cargo(java.lang.String, double, int, int)
+comment2.text=\r\n Constructor utilizado por las subclases para indicar\r\n una cantidad particular de horas de docencia.\r\n
+comment3.params=p_nombreCargo
+comment3.target=void setNombreCargo(java.lang.String)
+comment3.text=Setters privados.
+comment4.params=p_sueldoBasico
+comment4.target=void setSueldoBasico(double)
+comment5.params=p_anioIngreso
+comment5.target=void setAnioIngreso(int)
+comment6.params=p_horasDeDocencia
+comment6.target=void setHorasDeDocencia(int)
+comment7.target=java.lang.String getNombreCargo()
+comment7.text=Getters.
+comment8.target=double getSueldoBasico()
+comment9.target=int getAnioIngreso()
+numComments=15

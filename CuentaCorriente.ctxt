@@ -1,0 +1,21 @@
+#BlueJ class context
+#Tue Sep 29 15:41:15 ART 2026
+comment0.target=CuentaCorriente
+comment0.text=\r\n Representa una cuenta corriente que permite utilizar un l\u00EDmite\r\n de descubierto. Hereda los datos y operaciones comunes de\r\n CuentaBancaria.\r\n\r\n @author Rocio Anabel Gonzalez y Rodriguez Mercedes Antonella\r\n @version 2.0 - 28/09/2026\r\n
+comment1.params=p_nroCuenta p_titular
+comment1.target=CuentaCorriente(int, Persona)
+comment1.text=Construye una cuenta corriente sin saldo inicial.
+comment2.params=p_nroCuenta p_titular p_saldo
+comment2.target=CuentaCorriente(int, Persona, double)
+comment2.text=Construye una cuenta corriente con saldo inicial.
+comment3.params=p_limite
+comment3.target=void setLimiteDescubierto(double)
+comment4.target=double getLimiteDescubierto()
+comment5.params=p_importe
+comment5.target=boolean puedeExtraer(double)
+comment5.text=Permite extraer hasta la suma del saldo y el descubierto.
+comment6.params=p_importe
+comment6.target=java.lang.String xQNoPuedeExtraer(double)
+comment7.target=java.lang.String nombreCuenta()
+comment8.target=void mostrarDatosEspecificos()
+numComments=9

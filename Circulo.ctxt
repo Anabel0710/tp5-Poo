@@ -1,0 +1,21 @@
+#BlueJ class context
+#Mon Sep 28 01:19:22 ART 2026
+comment0.target=Circulo
+comment0.text=\r\n Representa un c\u00EDrculo ubicado en el plano cartesiano.\r\n\r\n Circulo es una especializaci\u00F3n de Elipse porque sus dos\r\n semiejes poseen la misma medida, denominada radio.\r\n\r\n @author Rocio Anabel Gonzalez y Rodriguez Mercedes Antonella\r\n @version 2.0 - 26/09/2026\r\n
+comment1.params=p_radio p_centro
+comment1.target=Circulo(double, Punto)
+comment1.text=\r\n Construye un c\u00EDrculo indicando su radio y su centro.\r\n\r\n El radio se env\u00EDa dos veces al constructor de Elipse porque\r\n ambos semiejes de un c\u00EDrculo poseen la misma medida.\r\n\r\n Este constructor conserva el orden de par\u00E1metros utilizado\r\n por la clase Circulo de los trabajos anteriores.\r\n\r\n @param p_radio radio del c\u00EDrculo\r\n @param p_centro centro del c\u00EDrculo\r\n
+comment2.params=p_centro p_radio
+comment2.target=Circulo(Punto, double)
+comment2.text=\r\n Constructor alternativo que recibe primero el centro\r\n y luego el radio.\r\n\r\n @param p_centro centro del c\u00EDrculo\r\n @param p_radio radio del c\u00EDrculo\r\n
+comment3.target=Circulo()
+comment3.text=\r\n Construye un c\u00EDrculo con radio cero y centro en (0, 0).\r\n
+comment4.target=double getRadio()
+comment4.text=\r\n Devuelve el radio del c\u00EDrculo.\r\n\r\n Como ambos semiejes tienen la misma medida, se utiliza\r\n el semieje mayor heredado de Elipse.\r\n\r\n @return radio del c\u00EDrculo\r\n
+comment5.target=Punto getCentro()
+comment5.text=\r\n Devuelve el centro del c\u00EDrculo.\r\n\r\n Este m\u00E9todo conserva el protocolo p\u00FAblico que ten\u00EDa\r\n la clase Circulo en los trabajos anteriores.\r\n\r\n @return centro del c\u00EDrculo\r\n
+comment6.target=double perimetro()
+comment6.text=\r\n Calcula el per\u00EDmetro del c\u00EDrculo.\r\n\r\n @return per\u00EDmetro del c\u00EDrculo\r\n
+comment7.target=java.lang.String nombreFigura()
+comment7.text=\r\n Redefine el nombre de la figura heredado de Elipse.\r\n\r\n @return nombre correspondiente al c\u00EDrculo\r\n
+numComments=8

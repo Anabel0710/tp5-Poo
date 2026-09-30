@@ -1,0 +1,7 @@
+#BlueJ class context
+#Mon Sep 28 00:58:20 ART 2026
+comment0.target=Empresa
+comment0.text=\r\n Clase ejecutable para comprobar el funcionamiento\r\n de las clases Persona y Empleado.\r\n\r\n @author Rocio Anabel Gonzalez y Rodriguez Mercedes Antonella\r\n @version 1.0 - 22/09/2026\r\n
+comment1.params=args
+comment1.target=void main(java.lang.String[])
+numComments=2

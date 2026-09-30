@@ -1,0 +1,7 @@
+#BlueJ class context
+#Mon Sep 28 00:58:20 ART 2026
+comment0.target=Escuela
+comment0.text=\r\n Clase ejecutable que permite ingresar por teclado los datos\r\n de una persona y de un alumno para mostrar su informaci\u00F3n.\r\n\r\n @author Rocio Anabel Gonzalez y Rodriguez Mercedes Antonella\r\n @version 1.0 - 23/08/2026\r\n
+comment1.params=args
+comment1.target=void main(java.lang.String[])
+numComments=2

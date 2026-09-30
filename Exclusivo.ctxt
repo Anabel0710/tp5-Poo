@@ -1,0 +1,16 @@
+#BlueJ class context
+#Mon Sep 28 01:46:08 ART 2026
+comment0.target=Exclusivo
+comment0.text=\r\n Representa un cargo de car\u00E1cter exclusivo.\r\n\r\n Permite establecer las horas destinadas a docencia,\r\n investigaci\u00F3n y extensi\u00F3n.\r\n\r\n @author Rocio Anabel Gonzalez y Rodriguez Mercedes Antonella\r\n @version 1.0 - 28/09/2026\r\n
+comment1.params=p_nombreCargo p_sueldoBasico p_anioIngreso p_horasDocencia p_horasInvestigacion p_horasExtension
+comment1.target=Exclusivo(java.lang.String, double, int, int, int, int)
+comment1.text=\r\n Construye un cargo exclusivo.\r\n\r\n @param p_nombreCargo nombre del cargo\r\n @param p_sueldoBasico sueldo b\u00E1sico\r\n @param p_anioIngreso a\u00F1o de ingreso\r\n @param p_horasDocencia horas de docencia\r\n @param p_horasInvestigacion horas de investigaci\u00F3n\r\n @param p_horasExtension horas de extensi\u00F3n\r\n
+comment2.params=p_horas
+comment2.target=void setHorasDeInvestigacion(int)
+comment3.params=p_horas
+comment3.target=void setHorasDeExtension(int)
+comment4.target=int getHorasDeInvestigacion()
+comment5.target=int getHorasDeExtension()
+comment6.target=void mostrarCargo()
+comment6.text=\r\n Redefine el m\u00E9todo para mostrar las horas propias\r\n de un cargo exclusivo.\r\n
+numComments=7

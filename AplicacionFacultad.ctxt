@@ -1,0 +1,7 @@
+#BlueJ class context
+#Mon Sep 28 09:59:02 ART 2026
+comment0.target=AplicacionFacultad
+comment0.text=\r\n Clase ejecutable que permite cargar por teclado una facultad,\r\n sus profesores y los cargos correspondientes.\r\n\r\n @author Rocio Anabel Gonzalez y Rodriguez Mercedes Antonella\r\n @version 1.0 - 27/09/2026\r\n
+comment1.params=args
+comment1.target=void main(java.lang.String[])
+numComments=2

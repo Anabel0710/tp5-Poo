@@ -1,0 +1,28 @@
+#BlueJ class context
+#Tue Sep 29 18:44:52 ART 2026
+comment0.target=Jardin
+comment0.text=\r\n Representa un jard\u00EDn que desea pintar diferentes figuras\r\n geom\u00E9tricas en el piso.\r\n\r\n Permite calcular la superficie total, los litros de pintura\r\n y la cantidad de latas necesarias.\r\n\r\n @author Rocio Anabel Gonzalez y Rodriguez Mercedes Antonella\r\n @version 1.0 - 29/09/2026\r\n
+comment1.params=p_nombre
+comment1.target=Jardin(java.lang.String)
+comment1.text=\r\n Construye un jard\u00EDn inicialmente sin figuras.\r\n\r\n @param p_nombre nombre del jard\u00EDn\r\n
+comment10.target=int cuantasLatas()
+comment10.text=\r\n Calcula la cantidad de latas que deben comprarse.\r\n\r\n Se utiliza Math.ceil porque no pueden comprarse fracciones\r\n de lata y siempre debe alcanzarse a cubrir toda la superficie.\r\n\r\n @return cantidad entera de latas\r\n
+comment11.target=void detalleFiguras()
+comment11.text=\r\n Muestra el presupuesto completo del jard\u00EDn.\r\n
+comment2.params=p_nombre
+comment2.target=void setNombre(java.lang.String)
+comment3.params=p_figuras
+comment3.target=void setFiguras(java.util.ArrayList)
+comment4.target=java.lang.String getNombre()
+comment5.target=java.util.ArrayList getFiguras()
+comment6.params=p_figura
+comment6.target=void agregarFigura(FiguraGeometrica)
+comment6.text=\r\n Agrega una figura al presupuesto del jard\u00EDn.\r\n
+comment7.params=p_figura
+comment7.target=boolean quitarFigura(FiguraGeometrica)
+comment7.text=\r\n Quita una figura de la colecci\u00F3n.\r\n\r\n @return true si la figura fue encontrada y eliminada\r\n
+comment8.target=double cuantosMetros()
+comment8.text=\r\n Calcula la cantidad total de metros cuadrados a pintar.\r\n\r\n @return superficie total de todas las figuras\r\n
+comment9.target=double cuantosLitros()
+comment9.text=\r\n Calcula los litros de pintura necesarios.\r\n\r\n Una lata de cuatro litros cubre veinte metros cuadrados.\r\n
+numComments=12

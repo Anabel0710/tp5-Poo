@@ -1,0 +1,37 @@
+#BlueJ class context
+#Mon Sep 28 01:19:22 ART 2026
+comment0.target=Elipse
+comment0.text=\r\n Representa una elipse ubicada en el plano cartesiano.\r\n\r\n La elipse posee un centro, un semieje mayor y un semieje menor.\r\n Esta clase tambi\u00E9n funciona como superclase de Circulo.\r\n\r\n @author Rocio Anabel Gonzalez y Rodriguez Mercedes Antonella\r\n @version 1.0 - 26/09/2026\r\n
+comment1.params=p_centro p_sEjeMayor p_sEjeMenor
+comment1.target=Elipse(Punto, double, double)
+comment1.text=\r\n Construye una elipse indicando su centro y sus semiejes.\r\n\r\n @param p_centro centro de la elipse\r\n @param p_sEjeMayor medida del semieje mayor\r\n @param p_sEjeMenor medida del semieje menor\r\n
+comment10.target=double superficie()
+comment10.text=\r\n Calcula la superficie de la elipse.\r\n\r\n F\u00F3rmula\: PI \u00D7 semieje mayor \u00D7 semieje menor.\r\n\r\n @return superficie de la elipse\r\n
+comment11.params=p_dx p_dy
+comment11.target=void desplazar(double, double)
+comment11.text=\r\n Desplaza la elipse modificando las coordenadas de su centro.\r\n\r\n @param p_dx desplazamiento sobre el eje X\r\n @param p_dy desplazamiento sobre el eje Y\r\n
+comment12.params=p_otraElipse
+comment12.target=double distanciaA(Elipse)
+comment12.text=\r\n Calcula la distancia entre los centros de dos elipses.\r\n\r\n @param p_otraElipse elipse con la cual se compara\r\n @return distancia entre los centros\r\n
+comment13.params=p_otraElipse
+comment13.target=Elipse elMayor(Elipse)
+comment13.text=\r\n Devuelve la elipse que posee mayor superficie.\r\n\r\n @param p_otraElipse elipse con la cual se compara\r\n @return elipse de mayor superficie\r\n
+comment14.target=void caracteristicas()
+comment14.text=\r\n Muestra las caracter\u00EDsticas de la elipse.\r\n\r\n Se utiliza nombreFigura() para permitir que el encabezado\r\n cambie cuando el objeto sea un Circulo.\r\n
+comment2.params=p_sEjeMayor p_sEjeMenor
+comment2.target=Elipse(double, double)
+comment2.text=\r\n Construye una elipse con centro en el punto (0, 0).\r\n\r\n @param p_sEjeMayor medida del semieje mayor\r\n @param p_sEjeMenor medida del semieje menor\r\n
+comment3.params=p_sEjeMayor
+comment3.target=void setSEjeMayor(double)
+comment3.text=Setters privados.
+comment4.params=p_sEjeMenor
+comment4.target=void setSEjeMenor(double)
+comment5.params=p_centro
+comment5.target=void setCentro(Punto)
+comment6.target=double getSEjeMayor()
+comment6.text=\r\n Los getters son protected para que puedan ser utilizados\r\n por las subclases, como Circulo.\r\n
+comment7.target=double getSEjeMenor()
+comment8.target=Punto getCentro()
+comment9.target=java.lang.String nombreFigura()
+comment9.text=\r\n Devuelve el nombre de la figura.\r\n\r\n @return nombre correspondiente a una elipse\r\n
+numComments=15

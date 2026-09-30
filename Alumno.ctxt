@@ -1,0 +1,27 @@
+#BlueJ class context
+#Tue Sep 22 15:59:24 ART 2026
+comment0.target=Alumno
+comment0.text=\r\n Clase Alumno que representa un estudiante con dos notas.\r\n Permite calcular promedio, verificar si aprueba y mostrar sus datos.\r\n \r\n @author (Rocio Anabel Gonzalez y Rodriguez Mercedes Antonella) \r\n @version 1.0\r\n
+comment1.params=p_dni p_nombre p_apellido p_anioNacimiento p_lu
+comment1.target=Alumno(int, java.lang.String, java.lang.String, int, int)
+comment1.text=Constructor\: inicializa notas en cero
+comment10.target=java.lang.String leyendaAprueba()
+comment10.text=Devuelve leyenda APROBADO o DESAPROBADO
+comment11.target=void mostrar()
+comment11.text=Muestra los datos del alumno
+comment2.target=int getLu()
+comment2.text=Getters
+comment3.target=double getNota1()
+comment4.target=double getNota2()
+comment5.params=p_lu
+comment5.target=void setLu(int)
+comment5.text=Setters privados
+comment6.params=p_nota
+comment6.target=void setNota1(double)
+comment7.params=p_nota
+comment7.target=void setNota2(double)
+comment8.target=double promedio()
+comment8.text=Calcula el promedio de notas
+comment9.target=boolean aprueba()
+comment9.text=Verifica si aprueba seg\u00FAn reglas
+numComments=12
