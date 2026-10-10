@@ -54,15 +54,8 @@ public class Cuadrado extends Rectangulo
     {
         System.out.println(this.nombreFigura());
 
-        System.out.println(
-            "Origen: " + this.getOrigen().coordenadas()
-            + " - Lado: " + this.getLado()
-        );
+        System.out.println("Origen: " + this.getOrigen().coordenadas() + " - Lado: " + this.getLado());
 
-        System.out.printf(
-            "Superficie: %.2f - Perimetro: %.2f%n",
-            this.superficie(),
-            this.perimetro()
-        );
+        System.out.printf("Superficie: %.2f - Perimetro: %.2f%n", this.superficie(), this.perimetro());
     }
 }

@@ -1,0 +1,28 @@
+#BlueJ class context
+#Mon Oct 05 18:51:30 ART 2026
+comment0.target=Cocina
+comment0.text=\r\n Representa una cocina comercializada por el comercio.\r\n\r\n @author Rocio Anabel Gonzalez y Rodriguez Mercedes Antonella\r\n @version 1.0 03/10/2026\r\n
+comment1.params=p_marca p_precio p_stock p_hornallas p_calorias p_dimensiones
+comment1.target=Cocina(java.lang.String, float, int, int, int, java.lang.String)
+comment1.text=\r\n Construye una cocina con todos sus datos.\r\n\r\n @param p_marca marca de la cocina\r\n @param p_precio precio de la cocina\r\n @param p_stock stock disponible\r\n @param p_hornallas cantidad de hornallas\r\n @param p_calorias cantidad de calor\u00EDas\r\n @param p_dimensiones dimensiones de la cocina\r\n
+comment2.target=int getHornallas()
+comment2.text=Devuelve la cantidad de hornallas.
+comment3.target=int getCalorias()
+comment3.text=Devuelve las calor\u00EDas.
+comment4.target=java.lang.String getDimensiones()
+comment4.text=Devuelve las dimensiones.
+comment5.params=p_hornallas
+comment5.target=void setHornallas(int)
+comment5.text=Asigna la cantidad de hornallas.
+comment6.params=p_calorias
+comment6.target=void setCalorias(int)
+comment6.text=Asigna las calor\u00EDas.
+comment7.params=p_dimensiones
+comment7.target=void setDimensiones(java.lang.String)
+comment7.text=Asigna las dimensiones.
+comment8.params=p_cuotas p_interes
+comment8.target=float creditoConAdicional(int, float)
+comment8.text=\r\n Devuelve la cuota sin aplicar modificaciones adicionales.\r\n\r\n @param p_cuotas cantidad de cuotas\r\n @param p_interes porcentaje de inter\u00E9s\r\n @return valor normal de la cuota\r\n
+comment9.target=void imprimir()
+comment9.text=Muestra los datos generales y particulares de la cocina.
+numComments=10

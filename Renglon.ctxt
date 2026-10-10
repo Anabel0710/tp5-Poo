@@ -1,0 +1,25 @@
+#BlueJ class context
+#Sat Oct 10 17:37:38 ART 2026
+comment0.target=Renglon
+comment0.text=\r\n Representa un rengl\u00F3n de un pedido.\r\n\r\n Contiene una etiqueta, la cantidad solicitada y el precio\r\n calculado polim\u00F3rficamente.\r\n\r\n @author Rocio Anabel Gonzalez y Rodriguez Mercedes Antonella\r\n @version 1.0\r\n
+comment1.params=p_cantidad p_item
+comment1.target=Renglon(int, Etiqueta)
+comment1.text=\r\n Construye un rengl\u00F3n y calcula su precio.\r\n\r\n @param p_cantidad cantidad de etiquetas\r\n @param p_item etiqueta solicitada\r\n
+comment2.target=int getCantidad()
+comment2.text=Devuelve la cantidad solicitada.
+comment3.target=double getPrecio()
+comment3.text=Devuelve el precio total del rengl\u00F3n.
+comment4.target=Etiqueta getItem()
+comment4.text=Devuelve la etiqueta solicitada.
+comment5.params=p_cantidad
+comment5.target=void setCantidad(int)
+comment5.text=Asigna la cantidad.
+comment6.params=p_precio
+comment6.target=void setPrecio(double)
+comment6.text=Asigna el precio.
+comment7.params=p_item
+comment7.target=void setItem(Etiqueta)
+comment7.text=Asigna la etiqueta.
+comment8.target=void mostrar()
+comment8.text=Muestra los datos del rengl\u00F3n.
+numComments=9

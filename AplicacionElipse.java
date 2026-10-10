@@ -29,7 +29,7 @@ public class AplicacionElipse
 
         Punto centroElipse = new Punto(xElipse, yElipse);
 
-        Elipse elipse = new Elipse( centroElipse, semiejeMayor, semiejeMenor);
+        Elipse elipse = new Elipse(semiejeMayor, semiejeMenor, centroElipse);
 
         System.out.println("\n===== CARGA DEL CIRCULO =====");
 
@@ -44,7 +44,7 @@ public class AplicacionElipse
 
         Punto centroCirculo = new Punto(xCirculo, yCirculo);
 
-        Circulo circulo = new Circulo(centroCirculo, radio);
+        Circulo circulo = new Circulo( radio, centroCirculo);
 
         System.out.println("\n===== CARACTERISTICAS =====");
 

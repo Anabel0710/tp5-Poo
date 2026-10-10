@@ -1,86 +1,89 @@
 /**
  * Representa una elipse ubicada en el plano cartesiano.
  *
- * La elipse posee un centro, un semieje mayor y un semieje menor.
- * Esta clase también funciona como superclase de Circulo.
+ * Hereda de FiguraGeometrica el punto que representa su centro.
+ * En esta clase, el origen heredado se interpreta como el centro
+ * de la elipse.
  *
  * @author Rocio Anabel Gonzalez y Rodriguez Mercedes Antonella
- * @version 1.0 - 26/09/2026
+ * @version 2.0 29/09/2026
  */
-public class Elipse
+public class Elipse extends FiguraGeometrica
 {
-    private double sEjeMayor;
-    private double sEjeMenor;
-    private Punto centro;
+    private double semiejeMayor;
+    private double semiejeMenor;
 
     /**
-     * Construye una elipse indicando su centro y sus semiejes.
+     * Construye una elipse indicando sus semiejes y su centro.
      *
+     * @param p_semiejeMayor longitud del semieje mayor
+     * @param p_semiejeMenor longitud del semieje menor
      * @param p_centro centro de la elipse
-     * @param p_sEjeMayor medida del semieje mayor
-     * @param p_sEjeMenor medida del semieje menor
      */
-    public Elipse(Punto p_centro, double p_sEjeMayor,double p_sEjeMenor)
-    {
-        this.setCentro(p_centro);
-        this.setSEjeMayor(p_sEjeMayor);
-        this.setSEjeMenor(p_sEjeMenor);
+    public Elipse(double p_semiejeMayor, double p_semiejeMenor, Punto p_centro) {
+        super(p_centro);
+        this.setSemiejeMayor(p_semiejeMayor);
+        this.setSemiejeMenor(p_semiejeMenor);
     }
 
     /**
-     * Construye una elipse con centro en el punto (0, 0).
+     * Construye una elipse con centro en (0,0).
      *
-     * @param p_sEjeMayor medida del semieje mayor
-     * @param p_sEjeMenor medida del semieje menor
+     * @param p_semiejeMayor longitud del semieje mayor
+     * @param p_semiejeMenor longitud del semieje menor
      */
-    public Elipse(double p_sEjeMayor, double p_sEjeMenor)
+    public Elipse(double p_semiejeMayor, double p_semiejeMenor)
     {
-        this(new Punto(0, 0), p_sEjeMayor, p_sEjeMenor);
+        super(new Punto(0, 0));
+        this.setSemiejeMayor(p_semiejeMayor);
+        this.setSemiejeMenor(p_semiejeMenor);
     }
 
-    /** Setters privados. */
-    private void setSEjeMayor(double p_sEjeMayor)
+    /** Asigna el semieje mayor. */
+    private void setSemiejeMayor(double p_semiejeMayor)
     {
-        this.sEjeMayor = p_sEjeMayor;
+        this.semiejeMayor = p_semiejeMayor;
     }
 
-    private void setSEjeMenor(double p_sEjeMenor)
+    /** Asigna el semieje menor. */
+    private void setSemiejeMenor(double p_semiejeMenor)
     {
-        this.sEjeMenor = p_sEjeMenor;
+        this.semiejeMenor = p_semiejeMenor;
     }
 
-    private void setCentro(Punto p_centro)
+    /** Devuelve el semieje mayor. */
+    public double getSemiejeMayor()
     {
-        this.centro = p_centro;
+        return this.semiejeMayor;
+    }
+
+    /** Devuelve el semieje menor. */
+    public double getSemiejeMenor()
+    {
+        return this.semiejeMenor;
     }
 
     /**
-     * Los getters son protected para que puedan ser utilizados
-     * por las subclases, como Circulo.
-     */
-    protected double getSEjeMayor()
-    {
-        return this.sEjeMayor;
-    }
-
-    protected double getSEjeMenor()
-    {
-        return this.sEjeMenor;
-    }
-
-    protected Punto getCentro()
-    {
-        return this.centro;
-    }
-
-    /**
-     * Devuelve el nombre de la figura.
+     * Devuelve el centro de la elipse.
      *
-     * @return nombre correspondiente a una elipse
+     * El centro corresponde al origen heredado de FiguraGeometrica.
+     *
+     * @return centro de la elipse
      */
-    public String nombreFigura()
+    public Punto getCentro()
     {
-        return "****** Elipse ******";
+        return this.getOrigen();
+    }
+
+    /**
+     * Desplaza el centro de la elipse.
+     *
+     * @param p_dx desplazamiento sobre el eje X
+     * @param p_dy desplazamiento sobre el eje Y
+     */
+    public void desplazar(double p_dx, double p_dy)
+    {
+        this.getCentro().desplazar(p_dx, p_dy);
     }
 
     /**
@@ -90,20 +93,34 @@ public class Elipse
      *
      * @return superficie de la elipse
      */
+    @Override
     public double superficie()
     {
-        return Math.PI * this.getSEjeMayor() * this.getSEjeMenor();
+        return Math.PI * this.getSemiejeMayor() * this.getSemiejeMenor();
     }
 
     /**
-     * Desplaza la elipse modificando las coordenadas de su centro.
+     * Calcula aproximadamente el perímetro de la elipse.
      *
-     * @param p_dx desplazamiento sobre el eje X
-     * @param p_dy desplazamiento sobre el eje Y
+     * @return perímetro aproximado
      */
-    public void desplazar(double p_dx, double p_dy)
+    public double perimetro()
     {
-        this.getCentro().desplazar(p_dx, p_dy);
+        double a = this.getSemiejeMayor();
+        double b = this.getSemiejeMenor();
+
+        return Math.PI * ( 3 * (a + b) - Math.sqrt((3 * a + b) * (a + 3 * b)));
+    }
+
+    /**
+     * Devuelve el nombre de la figura.
+     *
+     * @return nombre de la figura
+     */
+    @Override
+    public String nombreFigura()
+    {
+        return "Elipse";
     }
 
     /**
@@ -118,13 +135,12 @@ public class Elipse
     }
 
     /**
-     * Devuelve la elipse que posee mayor superficie.
+     * Devuelve la elipse que tiene mayor superficie.
      *
      * @param p_otraElipse elipse con la cual se compara
      * @return elipse de mayor superficie
      */
-    public Elipse elMayor(Elipse p_otraElipse)
-    {
+    public Elipse elMayor(Elipse p_otraElipse){
         if (this.superficie() >= p_otraElipse.superficie())
         {
             return this;
@@ -133,23 +149,13 @@ public class Elipse
         return p_otraElipse;
     }
 
-    /**
-     * Muestra las características de la elipse.
-     *
-     * Se utiliza nombreFigura() para permitir que el encabezado
-     * cambie cuando el objeto sea un Circulo.
-     */
-    public void caracteristicas()
-    {
-        System.out.println(this.nombreFigura());
-
-        System.out.printf( "Centro: %s - Semieje Mayor: %.2f"
-            + " - Semieje Menor: %.2f%n",
-            this.getCentro().coordenadas(),
-            this.getSEjeMayor(),
-            this.getSEjeMenor()
-        );
-
-        System.out.printf( "Superficie: %.2f%n", this.superficie());
+    /** Muestra las características de la elipse. */
+    public void caracteristicas(){
+        System.out.println("***** Elipse *****");
+        System.out.println("- Centro: " + this.getCentro().coordenadas());
+        System.out.println("- Semieje mayor: " + this.getSemiejeMayor());
+        System.out.println("- Semieje menor: " + this.getSemiejeMenor());
+        System.out.println("- Superficie: " + this.superficie());
+        System.out.println("- Perímetro aproximado: " + this.perimetro());
     }
 }

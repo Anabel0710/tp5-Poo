@@ -1,0 +1,20 @@
+#BlueJ class context
+#Sat Oct 10 17:09:50 ART 2026
+comment0.target=Hotel
+comment0.text=\r\n Representa un hotel perteneciente a la cadena hotelera.\r\n\r\n @author Rocio Anabel Gonzalez y Rodriguez Mercedes Antonella\r\n @version 1.0 6/10/2026\r\n
+comment1.params=p_nombre p_precioBase p_diasAlquiler p_tipoHabitacion
+comment1.target=Hotel(java.lang.String, double, int, java.lang.String)
+comment1.text=\r\n Construye un hotel.\r\n\r\n @param p_nombre nombre del hotel\r\n @param p_precioBase precio base por d\u00EDa\r\n @param p_diasAlquiler cantidad de d\u00EDas\r\n @param p_tipoHabitacion tipo de habitaci\u00F3n\r\n
+comment2.target=java.lang.String getTipoHabitacion()
+comment2.text=Devuelve el tipo de habitaci\u00F3n.
+comment3.params=p_tipoHabitacion
+comment3.target=void setTipoHabitacion(java.lang.String)
+comment3.text=Asigna el tipo de habitaci\u00F3n.
+comment4.target=double costo()
+comment4.text=\r\n Calcula el costo del hotel seg\u00FAn el tipo de habitaci\u00F3n.\r\n\r\n @return costo del hotel sin servicios\r\n
+comment5.params=p_alojamiento
+comment5.target=int contar(java.lang.String)
+comment5.text=\r\n Indica si este alojamiento coincide con el tipo Hotel.\r\n\r\n @param p_alojamiento tipo buscado\r\n @return uno si se busca Hotel; cero en caso contrario\r\n
+comment6.target=void liquidar()
+comment6.text=\r\n Muestra la liquidaci\u00F3n completa del hotel.\r\n
+numComments=7

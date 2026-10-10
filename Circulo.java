@@ -1,76 +1,46 @@
 /**
  * Representa un círculo ubicado en el plano cartesiano.
  *
- * Circulo es una especialización de Elipse porque sus dos
- * semiejes poseen la misma medida, denominada radio.
+ * Un círculo es una especialización de Elipse porque sus dos
+ * semiejes tienen la misma longitud: el radio.
  *
  * @author Rocio Anabel Gonzalez y Rodriguez Mercedes Antonella
- * @version 2.0 - 26/09/2026
+ * @version 2.0
  */
 public class Circulo extends Elipse
 {
     /**
-     * Construye un círculo indicando su radio y su centro.
+     * Construye un círculo indicando su radio y centro.
      *
-     * El radio se envía dos veces al constructor de Elipse porque
-     * ambos semiejes de un círculo poseen la misma medida.
-     *
-     * Este constructor conserva el orden de parámetros utilizado
-     * por la clase Circulo de los trabajos anteriores.
+     * El radio se envía como semieje mayor y semieje menor
+     * al constructor de Elipse.
      *
      * @param p_radio radio del círculo
      * @param p_centro centro del círculo
      */
     public Circulo(double p_radio, Punto p_centro)
     {
-        super(p_centro, p_radio, p_radio);
+        super(p_radio, p_radio, p_centro);
     }
 
     /**
-     * Constructor alternativo que recibe primero el centro
-     * y luego el radio.
-     *
-     * @param p_centro centro del círculo
-     * @param p_radio radio del círculo
-     */
-    public Circulo(Punto p_centro, double p_radio)
-    {
-        this(p_radio, p_centro);
-    }
-
-    /**
-     * Construye un círculo con radio cero y centro en (0, 0).
+     * Construye un círculo con radio cero y centro en (0,0).
      */
     public Circulo()
     {
-        this(0, new Punto());
+        super(0, 0, new Punto(0, 0));
     }
 
     /**
      * Devuelve el radio del círculo.
      *
-     * Como ambos semiejes tienen la misma medida, se utiliza
-     * el semieje mayor heredado de Elipse.
+     * El radio corresponde a cualquiera de los semiejes heredados.
      *
      * @return radio del círculo
      */
     public double getRadio()
     {
-        return this.getSEjeMayor();
-    }
-
-    /**
-     * Devuelve el centro del círculo.
-     *
-     * Este método conserva el protocolo público que tenía
-     * la clase Circulo en los trabajos anteriores.
-     *
-     * @return centro del círculo
-     */
-    @Override
-    public Punto getCentro()
-    {
-        return super.getCentro();
+        return this.getSemiejeMayor();
     }
 
     /**
@@ -78,19 +48,61 @@ public class Circulo extends Elipse
      *
      * @return perímetro del círculo
      */
+    @Override
     public double perimetro()
     {
         return 2 * Math.PI * this.getRadio();
     }
 
     /**
-     * Redefine el nombre de la figura heredado de Elipse.
+     * Devuelve el nombre de la figura.
      *
-     * @return nombre correspondiente al círculo
+     * Este método permite que el polimorfismo identifique
+     * correctamente al objeto como un círculo.
+     *
+     * @return nombre de la figura
      */
     @Override
     public String nombreFigura()
     {
-        return "****** Circulo ******";
+        return "Círculo";
+    }
+
+    /**
+     * Calcula la distancia entre los centros de dos círculos.
+     *
+     * @param p_otroCirculo círculo con el cual se compara
+     * @return distancia entre los centros
+     */
+    public double distanciaA(Circulo p_otroCirculo)
+    {
+        return this.getCentro().distanciaA( p_otroCirculo.getCentro());
+    }
+
+    /**
+     * Devuelve el círculo que tiene mayor superficie.
+     *
+     * @param p_otroCirculo círculo con el cual se compara
+     * @return círculo de mayor superficie
+     */
+    public Circulo elMayor(Circulo p_otroCirculo)
+    {
+        if (this.superficie() >= p_otroCirculo.superficie())
+        {
+            return this;
+        }
+
+        return p_otroCirculo;
+    }
+
+    /** Muestra las características del círculo. */
+    @Override
+    public void caracteristicas()
+    {
+        System.out.println("***** Círculo *****");
+        System.out.println("- Centro: " + this.getCentro().coordenadas());
+        System.out.println("- Radio: " + this.getRadio());
+        System.out.println("- Superficie: " + this.superficie());
+        System.out.println("- Perímetro: " + this.perimetro());
     }
 }

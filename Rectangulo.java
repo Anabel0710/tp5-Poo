@@ -1,16 +1,13 @@
 /**
  * Representa un rectángulo ubicado en el plano cartesiano.
- * Su origen corresponde a la esquina inferior izquierda.
  *
- * La clase puede ser reutilizada mediante herencia para representar
- * figuras más específicas, como la clase Cuadrado.
+ * Hereda de FiguraGeometrica el punto que representa su origen.
  *
  * @author Rocio Anabel Gonzalez y Rodriguez Mercedes Antonella
- * @version 2.0 - 26/09/2026
+ * @version 2.0 29/09/2026
  */
-public class Rectangulo
+public class Rectangulo extends FiguraGeometrica
 {
-    private Punto origen;
     private double ancho;
     private double alto;
 
@@ -23,69 +20,50 @@ public class Rectangulo
      */
     public Rectangulo(Punto p_origen, double p_ancho, double p_alto)
     {
-        this.setOrigen(p_origen);
+        super(p_origen);
         this.setAncho(p_ancho);
         this.setAlto(p_alto);
     }
 
     /**
-     * Construye un rectángulo con origen en el punto (0, 0).
+     * Construye un rectángulo con origen en (0,0).
      *
      * @param p_ancho ancho del rectángulo
      * @param p_alto alto del rectángulo
      */
     public Rectangulo(double p_ancho, double p_alto)
     {
-        this(new Punto(0, 0), p_ancho, p_alto);
+        super(new Punto(0, 0));
+        this.setAncho(p_ancho);
+        this.setAlto(p_alto);
     }
 
-    /** Setters privados. */
-    private void setOrigen(Punto p_origen)
-    {
-        this.origen = p_origen;
-    }
-
+    /** Asigna el ancho del rectángulo. */
     private void setAncho(double p_ancho)
     {
         this.ancho = p_ancho;
     }
 
+    /** Asigna el alto del rectángulo. */
     private void setAlto(double p_alto)
     {
         this.alto = p_alto;
     }
 
-    /**
-     * Los getters son protected para que puedan ser utilizados
-     * por las subclases, como Cuadrado.
-     */
-    protected Punto getOrigen()
-    {
-        return this.origen;
-    }
-
-    protected double getAncho()
+    /** Devuelve el ancho del rectángulo. */
+    public double getAncho()
     {
         return this.ancho;
     }
 
-    protected double getAlto()
+    /** Devuelve el alto del rectángulo. */
+    public double getAlto()
     {
         return this.alto;
     }
 
     /**
-     * Devuelve el nombre de la figura.
-     *
-     * @return nombre del rectángulo
-     */
-    public String nombreFigura()
-    {
-        return "****** Rectangulo ******";
-    }
-
-    /**
-     * Desplaza el rectángulo modificando las coordenadas de su origen.
+     * Desplaza el rectángulo modificando su origen.
      *
      * @param p_dx desplazamiento sobre el eje X
      * @param p_dy desplazamiento sobre el eje Y
@@ -108,27 +86,36 @@ public class Rectangulo
     /**
      * Calcula la superficie del rectángulo.
      *
+     * Implementa el método abstracto heredado de FiguraGeometrica.
+     *
      * @return superficie del rectángulo
      */
+    @Override
     public double superficie()
     {
         return this.getAncho() * this.getAlto();
     }
 
     /**
-     * Muestra las características del rectángulo.
+     * Devuelve el nombre de la figura.
+     *
+     * @return nombre de la figura
      */
+    @Override
+    public String nombreFigura()
+    {
+        return "Rectángulo";
+    }
+
+    /** Muestra las características del rectángulo. */
     public void caracteristicas()
     {
-        System.out.println(this.nombreFigura());
-
-        System.out.println(
-            "Origen: " + this.getOrigen().coordenadas()
-            + " - Alto: " + this.getAlto()
-            + " - Ancho: " + this.getAncho()
-        );
-
-        System.out.printf("Superficie: %.2f - Perimetro: %.2f%n", this.superficie(), this.perimetro());
+        System.out.println("***** Rectángulo *****");
+        System.out.println("- Origen: " + this.getOrigen().coordenadas());
+        System.out.println("- Alto: " + this.getAlto());
+        System.out.println("- Ancho: " + this.getAncho());
+        System.out.println("- Superficie: " + this.superficie());
+        System.out.println("- Perímetro: " + this.perimetro());
     }
 
     /**
@@ -137,13 +124,15 @@ public class Rectangulo
      * @param p_otroRectangulo rectángulo con el cual se compara
      * @return distancia entre los orígenes
      */
-    public double distanciaA(Rectangulo p_otroRectangulo)
+    public double distancia(Rectangulo p_otroRectangulo)
     {
-        return this.getOrigen().distanciaA( p_otroRectangulo.getOrigen());
+        return this.getOrigen().distanciaA(
+            p_otroRectangulo.getOrigen()
+        );
     }
 
     /**
-     * Devuelve el rectángulo que posee mayor superficie.
+     * Devuelve el rectángulo que tiene mayor superficie.
      *
      * @param p_otroRectangulo rectángulo con el cual se compara
      * @return rectángulo de mayor superficie

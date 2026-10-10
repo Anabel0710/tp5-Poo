@@ -1,0 +1,20 @@
+#BlueJ class context
+#Sat Oct 10 17:37:38 ART 2026
+comment0.target=Etiqueta
+comment0.text=\r\n Representa de manera general una etiqueta para packaging.\r\n\r\n Define las operaciones comunes de las etiquetas comunes\r\n y premium.\r\n\r\n @author Rocio Anabel Gonzalez y Rodriguez Mercedes Antonella\r\n @version 1.0\r\n
+comment1.params=p_costo
+comment1.target=Etiqueta(double)
+comment1.text=\r\n Construye una etiqueta con un costo unitario.\r\n\r\n @param p_costo costo unitario de la etiqueta\r\n
+comment2.target=double getCosto()
+comment2.text=Devuelve el costo unitario.
+comment3.params=p_costo
+comment3.target=void setCosto(double)
+comment3.text=Asigna el costo unitario.
+comment4.params=p_cantidad
+comment4.target=double precio(int)
+comment4.text=\r\n Calcula el precio correspondiente a una cantidad de etiquetas.\r\n\r\n @param p_cantidad cantidad solicitada\r\n @return precio de venta\r\n
+comment5.target=java.lang.String tipo()
+comment5.text=\r\n Devuelve el tipo de etiqueta.\r\n\r\n @return Premium o Com\u00FAn\r\n
+comment6.target=java.lang.String toString()
+comment6.text=\r\n Devuelve la descripci\u00F3n de la etiqueta.\r\n\r\n @return tipo y caracter\u00EDsticas particulares\r\n
+numComments=7

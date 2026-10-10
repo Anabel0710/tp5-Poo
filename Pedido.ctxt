@@ -1,0 +1,27 @@
+#BlueJ class context
+#Sat Oct 10 17:37:38 ART 2026
+comment0.target=Pedido
+comment0.text=\r\n Representa un pedido formado por uno o m\u00E1s renglones.\r\n\r\n @author Rocio Anabel Gonzalez y Rodriguez Mercedes Antonella\r\n @version 1.0\r\n
+comment1.params=p_renglon
+comment1.target=Pedido(Renglon)
+comment1.text=\r\n Construye un pedido con su primer rengl\u00F3n.\r\n\r\n La cardinalidad 1..* establece que el pedido no puede\r\n quedar vac\u00EDo.\r\n\r\n @param p_renglon primer rengl\u00F3n del pedido\r\n
+comment2.target=java.util.ArrayList getRenglones()
+comment2.text=Devuelve los renglones del pedido.
+comment3.params=p_renglones
+comment3.target=void setRenglones(java.util.ArrayList)
+comment3.text=Asigna la colecci\u00F3n de renglones.
+comment4.params=p_renglon
+comment4.target=boolean agregarRenglon(Renglon)
+comment4.text=\r\n Agrega un rengl\u00F3n al pedido.\r\n\r\n @param p_renglon rengl\u00F3n que se agregar\u00E1\r\n @return true si se agreg\u00F3 correctamente\r\n
+comment5.params=p_renglon
+comment5.target=boolean quitarRenglon(Renglon)
+comment5.text=\r\n Elimina un rengl\u00F3n siempre que el pedido conserve al menos uno.\r\n\r\n @param p_renglon rengl\u00F3n que se eliminar\u00E1\r\n @return true si se elimin\u00F3; false si no puede eliminarse\r\n
+comment6.target=int cantidadItems()
+comment6.text=\r\n Devuelve la cantidad de renglones.\r\n\r\n @return cantidad de \u00EDtems diferentes\r\n
+comment7.target=int cantidadTotalEtiquetas()
+comment7.text=\r\n Calcula la cantidad total de etiquetas.\r\n\r\n @return suma de las cantidades\r\n
+comment8.target=double importeTotal()
+comment8.text=\r\n Calcula el importe total del pedido.\r\n\r\n @return suma de los precios de los renglones\r\n
+comment9.target=void mostrar()
+comment9.text=Muestra el pedido completo.
+numComments=10

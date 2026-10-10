@@ -1,0 +1,20 @@
+#BlueJ class context
+#Sat Oct 10 16:29:55 ART 2026
+comment0.target=Caba\u00F1a
+comment0.text=\r\n Representa una caba\u00F1a de la cadena hotelera.\r\n\r\n @author Rocio Anabel Gonzalez y Rodriguez Mercedes Antonella\r\n @version 1.0 6/10/2026\r\n
+comment1.params=p_nombre p_precioBase p_diasAlquiler p_nroHabitaciones
+comment1.target=Caba\u00F1a(java.lang.String, double, int, int)
+comment1.text=\r\n Construye una caba\u00F1a.\r\n\r\n @param p_nombre nombre de la caba\u00F1a\r\n @param p_precioBase precio base por d\u00EDa\r\n @param p_diasAlquiler cantidad de d\u00EDas\r\n @param p_nroHabitaciones cantidad de habitaciones\r\n
+comment2.target=int getNroHabitaciones()
+comment2.text=Devuelve la cantidad de habitaciones.
+comment3.params=p_nroHabitaciones
+comment3.target=void setNroHabitaciones(int)
+comment3.text=Asigna la cantidad de habitaciones.
+comment4.target=double costo()
+comment4.text=\r\n Calcula el costo de la caba\u00F1a.\r\n\r\n Al precio base se agregan $30 diarios por cada habitaci\u00F3n.\r\n\r\n @return costo de la caba\u00F1a sin servicios\r\n
+comment5.params=p_alojamiento
+comment5.target=int contar(java.lang.String)
+comment5.text=\r\n Indica si este alojamiento coincide con el tipo buscado.\r\n\r\n @param p_alojamiento tipo de alojamiento buscado\r\n @return uno si se busca Caba\u00F1a; cero en caso contrario\r\n
+comment6.target=void liquidar()
+comment6.text=\r\n Muestra la liquidaci\u00F3n completa de la caba\u00F1a.\r\n
+numComments=7

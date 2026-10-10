@@ -1,0 +1,23 @@
+#BlueJ class context
+#Sat Oct 10 17:37:38 ART 2026
+comment0.target=Comun
+comment0.text=\r\n Representa una etiqueta com\u00FAn.\r\n\r\n Al costo de las unidades se agrega el costo del dise\u00F1o y\r\n posteriormente se aplica el descuento por cantidad.\r\n\r\n @author Rocio Anabel Gonzalez y Rodriguez Mercedes Antonella\r\n @version 1.0\r\n
+comment1.params=p_costo p_plus
+comment1.target=Comun(double, double)
+comment1.text=\r\n Construye una etiqueta com\u00FAn.\r\n\r\n @param p_costo costo unitario\r\n @param p_plus costo adicional del dise\u00F1o\r\n
+comment2.target=double getPlus()
+comment2.text=Devuelve el costo del dise\u00F1o.
+comment3.params=p_plus
+comment3.target=void setPlus(double)
+comment3.text=Asigna el costo del dise\u00F1o.
+comment4.params=p_cantidad
+comment4.target=double descuento(int)
+comment4.text=\r\n Determina el descuento correspondiente a la cantidad.\r\n\r\n @param p_cantidad cantidad solicitada\r\n @return descuento expresado como decimal\r\n
+comment5.params=p_cantidad
+comment5.target=double precio(int)
+comment5.text=\r\n Calcula el precio de las etiquetas comunes.\r\n\r\n Primero suma el costo de las unidades y el dise\u00F1o.\r\n Luego aplica el descuento por cantidad.\r\n\r\n @param p_cantidad cantidad solicitada\r\n @return precio total\r\n
+comment6.target=java.lang.String tipo()
+comment6.text=\r\n Devuelve el tipo de etiqueta.\r\n\r\n @return Com\u00FAn\r\n
+comment7.target=java.lang.String toString()
+comment7.text=\r\n Devuelve la descripci\u00F3n de la etiqueta com\u00FAn.\r\n
+numComments=8

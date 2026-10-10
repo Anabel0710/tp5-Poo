@@ -1,0 +1,13 @@
+#BlueJ class context
+#Sat Oct 10 17:09:50 ART 2026
+comment0.target=AplicacionZoologico
+comment0.text=\r\n Ejecutable que simula el registro de visitantes del zool\u00F3gico.\r\n\r\n Crea un visitante independiente y una delegaci\u00F3n compuesta\r\n por otros dos individuos.\r\n\r\n @author Rocio Anabel Gonzalez y Rodriguez Mercedes Antonella\r\n @version 1.0\r\n
+comment1.params=args
+comment1.target=void main(java.lang.String[])
+comment2.params=p_teclado
+comment2.target=Persona leerPersona(java.util.Scanner)
+comment2.text=\r\n Lee por teclado los datos necesarios para crear una persona.\r\n\r\n @param p_teclado objeto utilizado para leer\r\n @return nueva persona\r\n
+comment3.params=p_teclado p_mensaje
+comment3.target=int leerEnteroPositivo(java.util.Scanner, java.lang.String)
+comment3.text=\r\n Lee y valida un n\u00FAmero entero positivo.\r\n
+numComments=4

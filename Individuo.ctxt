@@ -1,0 +1,24 @@
+#BlueJ class context
+#Sat Oct 10 16:56:11 ART 2026
+comment0.target=Individuo
+comment0.text=\r\n Representa a una persona que visita el zool\u00F3gico\r\n individualmente.\r\n\r\n La clase Persona act\u00FAa como colaboradora.\r\n\r\n @author Rocio Anabel Gonzalez y Rodriguez Mercedes Antonella\r\n @version 1.0\r\n
+comment1.params=p_persona p_fecha
+comment1.target=Individuo(Persona, java.util.Calendar)
+comment1.text=\r\n Construye un visitante individual.\r\n\r\n @param p_persona persona que realiza la visita\r\n @param p_fecha fecha de la visita\r\n
+comment2.target=Persona getPersona()
+comment2.text=Devuelve la persona asociada.
+comment3.params=p_persona
+comment3.target=void setPersona(Persona)
+comment3.text=Asigna la persona asociada.
+comment4.target=java.lang.String tipoVisitante()
+comment4.text=\r\n Devuelve el tipo concreto de visitante.\r\n\r\n @return Individuo\r\n
+comment5.target=double entrada()
+comment5.text=\r\n Devuelve el precio de la entrada individual.\r\n\r\n @return precio de la entrada\r\n
+comment6.target=void mostrar()
+comment6.text=Muestra los datos de la persona.
+comment7.params=p_fecha p_visitante
+comment7.target=void listarPorFecha(java.util.Calendar, java.lang.String)
+comment7.text=\r\n Muestra el individuo si la fecha y el tipo coinciden.\r\n\r\n El valor "Todos" permite listar sin discriminar por tipo.\r\n
+comment8.target=java.util.HashSet listarPersonas()
+comment8.text=\r\n Devuelve un conjunto que contiene a la persona.\r\n\r\n @return personas representadas por este visitante\r\n
+numComments=9

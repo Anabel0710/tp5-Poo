@@ -1,0 +1,22 @@
+#BlueJ class context
+#Sat Oct 10 16:17:00 ART 2026
+comment0.target=Comercio
+comment0.text=\r\n Clase ejecutable que permite cargar electrodom\u00E9sticos y\r\n simular su compra en cuotas.\r\n\r\n Demuestra el uso de herencia, clases abstractas,\r\n sobrescritura y polimorfismo.\r\n\r\n @author Rocio Anabel Gonzalez y Rodriguez Mercedes Antonella\r\n @version 1.0\r\n
+comment1.params=args
+comment1.target=void main(java.lang.String[])
+comment2.params=p_teclado p_mensaje
+comment2.target=int leerEnteroPositivo(java.util.Scanner, java.lang.String)
+comment2.text=\r\n Lee un n\u00FAmero entero mayor que cero.\r\n
+comment3.params=p_teclado p_mensaje
+comment3.target=int leerEnteroNoNegativo(java.util.Scanner, java.lang.String)
+comment3.text=\r\n Lee un n\u00FAmero entero mayor o igual que cero.\r\n
+comment4.params=p_teclado p_mensaje
+comment4.target=float leerFloatPositivo(java.util.Scanner, java.lang.String)
+comment4.text=\r\n Lee un n\u00FAmero decimal mayor que cero.\r\n
+comment5.params=p_teclado p_mensaje
+comment5.target=float leerFloatNoNegativo(java.util.Scanner, java.lang.String)
+comment5.text=\r\n Lee un n\u00FAmero decimal mayor o igual que cero.\r\n
+comment6.params=p_teclado p_mensaje
+comment6.target=boolean leerBooleano(java.util.Scanner, java.lang.String)
+comment6.text=\r\n Lee una respuesta S o N y la convierte a boolean.\r\n
+numComments=7

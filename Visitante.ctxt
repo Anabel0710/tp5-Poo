@@ -1,0 +1,32 @@
+#BlueJ class context
+#Sat Oct 10 16:51:10 ART 2026
+comment0.target=Visitante
+comment0.text=\r\n Representa de manera general a un visitante del zool\u00F3gico.\r\n\r\n @author Rocio Anabel Gonzalez y Rodriguez Mercedes Antonella\r\n @version 1.0\r\n
+comment1.params=p_nombre p_fechaVisita
+comment1.target=Visitante(java.lang.String, java.util.Calendar)
+comment1.text=\r\n Construye un visitante.\r\n\r\n @param p_nombre nombre identificador del visitante\r\n @param p_fechaVisita fecha en la que realiz\u00F3 la visita\r\n
+comment10.target=java.util.HashSet listarPersonas()
+comment10.text=\r\n Devuelve las personas que integran al visitante.\r\n\r\n @return conjunto de personas\r\n
+comment11.params=p_fecha1 p_fecha2
+comment11.target=boolean mismaFecha(java.util.Calendar, java.util.Calendar)
+comment11.text=\r\n Compara solamente d\u00EDa, mes y a\u00F1o de dos fechas.\r\n\r\n @param p_fecha1 primera fecha\r\n @param p_fecha2 segunda fecha\r\n @return true si representan el mismo d\u00EDa\r\n
+comment2.target=java.lang.String getNombre()
+comment2.text=Devuelve el nombre del visitante.
+comment3.target=java.util.Calendar getFechaVisita()
+comment3.text=Devuelve la fecha de la visita.
+comment4.params=p_nombre
+comment4.target=void setNombre(java.lang.String)
+comment4.text=Asigna el nombre del visitante.
+comment5.params=p_fechaVisita
+comment5.target=void setFechaVisita(java.util.Calendar)
+comment5.text=\r\n Asigna una copia de la fecha para evitar que sea modificada\r\n desde el exterior.\r\n
+comment6.target=void mostrar()
+comment6.text=Muestra los datos particulares del visitante.
+comment7.target=double entrada()
+comment7.text=\r\n Calcula el valor de la entrada.\r\n\r\n @return precio de la entrada\r\n
+comment8.params=p_fecha p_visitante
+comment8.target=void listarPorFecha(java.util.Calendar, java.lang.String)
+comment8.text=\r\n Lista el visitante cuando coinciden la fecha y el tipo.\r\n\r\n @param p_fecha fecha buscada\r\n @param p_visitante tipo buscado\r\n
+comment9.target=java.lang.String tipoVisitante()
+comment9.text=\r\n Devuelve el tipo concreto de visitante.\r\n\r\n @return Individuo o Delegaci\u00F3n\r\n
+numComments=12

@@ -1,0 +1,19 @@
+#BlueJ class context
+#Sat Oct 10 17:37:38 ART 2026
+comment0.target=AplicacionPedido
+comment0.text=\r\n Clase ejecutable que permite armar un pedido de etiquetas\r\n ingresando los datos por teclado.\r\n\r\n @author Rocio Anabel Gonzalez y Rodriguez Mercedes Antonella\r\n @version 1.0\r\n
+comment1.params=args
+comment1.target=void main(java.lang.String[])
+comment2.params=p_teclado
+comment2.target=Renglon leerRenglon(java.util.Scanner)
+comment2.text=\r\n Lee los datos necesarios para crear un rengl\u00F3n.\r\n\r\n @param p_teclado objeto utilizado para leer datos\r\n @return nuevo rengl\u00F3n\r\n
+comment3.params=p_teclado p_mensaje
+comment3.target=int leerEnteroPositivo(java.util.Scanner, java.lang.String)
+comment3.text=\r\n Lee un entero mayor que cero.\r\n
+comment4.params=p_teclado p_mensaje
+comment4.target=double leerDoublePositivo(java.util.Scanner, java.lang.String)
+comment4.text=\r\n Lee un n\u00FAmero decimal mayor que cero.\r\n
+comment5.params=p_teclado p_mensaje
+comment5.target=double leerDoubleNoNegativo(java.util.Scanner, java.lang.String)
+comment5.text=\r\n Lee un n\u00FAmero decimal mayor o igual que cero.\r\n
+numComments=6

@@ -1,0 +1,35 @@
+#BlueJ class context
+#Sat Oct 10 16:56:11 ART 2026
+comment0.target=Delegacion
+comment0.text=\r\n Representa una delegaci\u00F3n que visita el zool\u00F3gico.\r\n\r\n Est\u00E1 formada por una colecci\u00F3n de individuos y no permite\r\n inscribir dos personas con el mismo DNI.\r\n\r\n @author Rocio Anabel Gonzalez y Rodriguez Mercedes Antonella\r\n @version 1.0\r\n
+comment1.params=p_nombre p_fecha
+comment1.target=Delegacion(java.lang.String, java.util.Calendar)
+comment1.text=\r\n Construye una delegaci\u00F3n sin integrantes.\r\n\r\n @param p_nombre nombre de la delegaci\u00F3n\r\n @param p_fecha fecha de la visita\r\n
+comment10.params=p_fecha p_visitante
+comment10.target=void listarPorFecha(java.util.Calendar, java.lang.String)
+comment10.text=\r\n Muestra la delegaci\u00F3n cuando coinciden la fecha y el tipo.\r\n
+comment11.target=java.util.HashSet listarPersonas()
+comment11.text=\r\n Devuelve las personas integrantes sin repetir DNI.\r\n\r\n La comprobaci\u00F3n se realiza manualmente porque no es\r\n necesario modificar la clase Persona.\r\n
+comment12.params=p_personas p_dni
+comment12.target=boolean contieneDNI(java.util.HashSet, int)
+comment12.text=\r\n Comprueba si un conjunto contiene una persona con un DNI.\r\n
+comment2.target=java.util.ArrayList getIntegrantes()
+comment2.text=Devuelve los integrantes de la delegaci\u00F3n.
+comment3.params=p_integrantes
+comment3.target=void setIntegrantes(java.util.ArrayList)
+comment3.text=Asigna la colecci\u00F3n de integrantes.
+comment4.params=p_individuo
+comment4.target=boolean inscribirIndividuo(Individuo)
+comment4.text=\r\n Inscribe un individuo si su DNI todav\u00EDa no est\u00E1 registrado.\r\n\r\n @param p_individuo individuo que se inscribir\u00E1\r\n @return true si fue agregado; false si ya estaba registrado\r\n
+comment5.params=p_individuo
+comment5.target=boolean quitarIntegrante(Individuo)
+comment5.text=\r\n Elimina un integrante de la delegaci\u00F3n.\r\n\r\n @param p_individuo individuo que se eliminar\u00E1\r\n @return true si estaba registrado\r\n
+comment6.target=int cantidadIntegrantes()
+comment6.text=\r\n Devuelve la cantidad de integrantes.\r\n\r\n @return cantidad de individuos\r\n
+comment7.target=java.lang.String tipoVisitante()
+comment7.text=\r\n Devuelve el tipo concreto.\r\n\r\n @return Delegaci\u00F3n\r\n
+comment8.target=double entrada()
+comment8.text=\r\n Calcula el costo de la delegaci\u00F3n.\r\n\r\n Se suman las entradas individuales y se descuenta el 10%.\r\n\r\n @return precio de la entrada de la delegaci\u00F3n\r\n
+comment9.target=void mostrar()
+comment9.text=Muestra la delegaci\u00F3n y todos sus integrantes.
+numComments=13

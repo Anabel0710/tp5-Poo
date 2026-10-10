@@ -1,0 +1,31 @@
+#BlueJ class context
+#Sat Oct 10 16:36:11 ART 2026
+comment0.target=Gerencia
+comment0.text=\r\n Representa la gerencia regional de una cadena hotelera.\r\n\r\n Registra los alojamientos alquilados y permite emitir\r\n sus correspondientes liquidaciones.\r\n\r\n @author Rocio Anabel Gonzalez y Rodriguez Mercedes Antonella\r\n @version 1.0 6/10/2026\r\n
+comment1.params=p_nombre
+comment1.target=Gerencia(java.lang.String)
+comment1.text=\r\n Construye una gerencia sin alojamientos registrados.\r\n\r\n @param p_nombre nombre de la gerencia\r\n
+comment10.target=void mostrarLiquidacion()
+comment10.text=\r\n Muestra la liquidaci\u00F3n general de la gerencia.\r\n
+comment2.target=java.lang.String getNombre()
+comment2.text=Devuelve el nombre de la gerencia.
+comment3.target=java.util.ArrayList getAlojamientosAlquilados()
+comment3.text=Devuelve los alojamientos alquilados.
+comment4.params=p_nombre
+comment4.target=void setNombre(java.lang.String)
+comment4.text=Asigna el nombre de la gerencia.
+comment5.params=p_alojamientos
+comment5.target=void setAlojamientosAlquilados(java.util.ArrayList)
+comment5.text=Asigna la colecci\u00F3n de alojamientos.
+comment6.params=p_alojamiento
+comment6.target=boolean agregarAlojamiento(Alojamiento)
+comment6.text=\r\n Registra un alojamiento alquilado.\r\n\r\n @param p_alojamiento alojamiento que se agregar\u00E1\r\n @return true si se agreg\u00F3 correctamente\r\n
+comment7.params=p_alojamiento
+comment7.target=boolean quitarAlojamiento(Alojamiento)
+comment7.text=\r\n Elimina un alojamiento registrado.\r\n\r\n @param p_alojamiento alojamiento que se eliminar\u00E1\r\n @return true si estaba registrado\r\n
+comment8.params=p_tipoAlojamiento
+comment8.target=int contarAlojamiento(java.lang.String)
+comment8.text=\r\n Cuenta los alojamientos de un tipo determinado.\r\n\r\n Se utiliza polimorfismo porque contar() se ejecuta seg\u00FAn\r\n el tipo real de cada alojamiento.\r\n\r\n @param p_tipoAlojamiento Hotel o Caba\u00F1a\r\n @return cantidad encontrada\r\n
+comment9.target=void liquidar()
+comment9.text=\r\n Ejecuta la liquidaci\u00F3n de todos los alojamientos.\r\n
+numComments=11

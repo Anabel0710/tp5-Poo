@@ -1,0 +1,22 @@
+#BlueJ class context
+#Mon Oct 05 18:51:30 ART 2026
+comment0.target=Lavarropas
+comment0.text=\r\n Representa un lavarropas comercializado por el comercio.\r\n\r\n @author Rocio Anabel Gonzalez y Rodriguez Mercedes Antonella\r\n @version 1.0\r\n
+comment1.params=p_marca p_precio p_stock p_programas p_kilos p_automatico
+comment1.target=Lavarropas(java.lang.String, float, int, int, float, boolean)
+comment1.text=\r\n Construye un lavarropas con todos sus datos.\r\n\r\n @param p_marca marca del lavarropas\r\n @param p_precio precio del lavarropas\r\n @param p_stock stock disponible\r\n @param p_programas cantidad de programas\r\n @param p_kilos capacidad en kilogramos\r\n @param p_automatico indica si es autom\u00E1tico\r\n
+comment2.target=int getProgramas()
+comment3.target=float getKilos()
+comment4.target=boolean getAutomatico()
+comment5.params=p_programas
+comment5.target=void setProgramas(int)
+comment6.params=p_kilos
+comment6.target=void setKilos(float)
+comment7.params=p_automatico
+comment7.target=void setAutomatico(boolean)
+comment8.params=p_cuotas p_interes
+comment8.target=float creditoConAdicional(int, float)
+comment8.text=\r\n Calcula la cuota con el descuento correspondiente.\r\n\r\n Si el lavarropas no es autom\u00E1tico se aplica un descuento\r\n del 2% sobre el valor de cada cuota.\r\n\r\n @param p_cuotas cantidad de cuotas\r\n @param p_interes porcentaje de inter\u00E9s\r\n @return cuota con el descuento aplicado\r\n
+comment9.target=void imprimir()
+comment9.text=Muestra los datos generales y particulares del lavarropas.
+numComments=10

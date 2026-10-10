@@ -1,0 +1,22 @@
+#BlueJ class context
+#Sat Oct 10 17:09:50 ART 2026
+comment0.target=AdministracionGerencia
+comment0.text=\r\n Clase ejecutable que permite registrar alojamientos y servicios\r\n utilizando datos ingresados por teclado.\r\n\r\n @author Rocio Anabel Gonzalez y Rodriguez Mercedes Antonella\r\n @version 1.0 6/10/2026\r\n
+comment1.params=args
+comment1.target=void main(java.lang.String[])
+comment2.params=p_teclado p_alojamiento
+comment2.target=void cargarServicios(java.util.Scanner, Alojamiento)
+comment2.text=\r\n Permite cargar los servicios de un alojamiento.\r\n\r\n @param p_teclado objeto utilizado para leer datos\r\n @param p_alojamiento alojamiento que recibir\u00E1 los servicios\r\n
+comment3.params=p_teclado p_mensaje
+comment3.target=int leerEnteroPositivo(java.util.Scanner, java.lang.String)
+comment3.text=\r\n Lee un entero mayor que cero.\r\n
+comment4.params=p_teclado p_mensaje
+comment4.target=int leerEnteroNoNegativo(java.util.Scanner, java.lang.String)
+comment4.text=\r\n Lee un entero mayor o igual que cero.\r\n
+comment5.params=p_teclado p_mensaje
+comment5.target=double leerDoublePositivo(java.util.Scanner, java.lang.String)
+comment5.text=\r\n Lee un n\u00FAmero decimal mayor que cero.\r\n
+comment6.params=p_teclado p_mensaje
+comment6.target=double leerDoubleNoNegativo(java.util.Scanner, java.lang.String)
+comment6.text=\r\n Lee un n\u00FAmero decimal mayor o igual que cero.\r\n
+numComments=7
