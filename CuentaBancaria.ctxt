@@ -1,5 +1,5 @@
 #BlueJ class context
-#Tue Sep 29 15:41:15 ART 2026
+#Tue Oct 13 15:13:01 ART 2026
 comment0.target=CuentaBancaria
 comment0.text=\r\n Representa una cuenta bancaria perteneciente a una persona.\r\n Re\u00FAne el estado y el comportamiento com\u00FAn de CajaDeAhorro y\r\n CuentaCorriente para evitar la duplicaci\u00F3n de c\u00F3digo.\r\n\r\n @author Rocio Anabel Gonzalez y Rodriguez Mercedes Antonella\r\n @version 2.0 - 28/09/2026\r\n
 comment1.params=p_nroCuenta p_titular

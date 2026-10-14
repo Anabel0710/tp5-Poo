@@ -1,5 +1,5 @@
 #BlueJ class context
-#Mon Oct 05 17:48:15 ART 2026
+#Tue Oct 13 15:31:14 ART 2026
 comment0.target=Rectangulo
 comment0.text=\r\n Representa un rect\u00E1ngulo ubicado en el plano cartesiano.\r\n\r\n Hereda de FiguraGeometrica el punto que representa su origen.\r\n\r\n @author Rocio Anabel Gonzalez y Rodriguez Mercedes Antonella\r\n @version 2.0 29/09/2026\r\n
 comment1.params=p_origen p_ancho p_alto

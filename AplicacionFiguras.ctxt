@@ -1,5 +1,5 @@
 #BlueJ class context
-#Mon Oct 05 17:55:16 ART 2026
+#Tue Oct 13 15:31:14 ART 2026
 comment0.target=AplicacionFiguras
 comment0.text=\r\n Clase ejecutable para comprobar el funcionamiento de las clases\r\n Rectangulo y Cuadrado mediante el ingreso de datos por teclado.\r\n\r\n @author Rocio Anabel Gonzalez y Rodriguez Mercedes Antonella\r\n @version 1.0 - 26/09/2026\r\n
 comment1.params=args

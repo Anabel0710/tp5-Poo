@@ -52,10 +52,7 @@ public class Banco
          */
         if (titular.esCumpleaños())
         {
-            System.out.println(
-                "\n¡Feliz cumpleaños, "
-                + titular.nomYApe() + "!"
-            );
+            System.out.println( "\n¡Feliz cumpleaños, " + titular.nomYApe() + "!");
         }
 
         // Datos de la caja de ahorro.
@@ -74,11 +71,7 @@ public class Banco
         System.out.print("Ingrese el saldo inicial: ");
         double saldoCuentaCorriente = teclado.nextDouble();
 
-        CuentaCorriente cuentaCorriente = new CuentaCorriente(
-            nroCuentaCorriente,
-            titular,
-            saldoCuentaCorriente
-        );
+        CuentaCorriente cuentaCorriente = new CuentaCorriente(nroCuentaCorriente, titular, saldoCuentaCorriente);
 
         System.out.println("\nESTADO INICIAL\n");
 
@@ -88,7 +81,7 @@ public class Banco
 
         cuentaCorriente.mostrar();
 
-        /*
+        /**
          * PRUEBAS DE CUENTA CORRIENTE
          */
 
@@ -104,9 +97,7 @@ public class Banco
 
         cuentaCorriente.extraer(extraccionCorriente);
 
-        System.out.print(
-            "Ingrese un importe que supere el saldo "
-            + "más el descubierto: ");
+        System.out.print( "Ingrese un importe que supere el saldo " + "más el descubierto: ");
         double extraccionNoPermitida = teclado.nextDouble();
 
         cuentaCorriente.extraer(extraccionNoPermitida);
@@ -114,7 +105,7 @@ public class Banco
         System.out.println("\nEstado de la cuenta corriente:");
         cuentaCorriente.mostrar();
 
-        /*
+        /**
          * PRUEBAS DE CAJA DE AHORRO
          */
 
@@ -138,7 +129,7 @@ public class Banco
         System.out.println("\nEstado de la caja de ahorro:");
         cajaAhorro.mostrar();
 
-        /*
+        /**
          * La primera extracción permitida ya consumió una de las
          * diez extracciones. Se utilizan las nueve restantes.
          * Antes se deposita dinero suficiente.
@@ -150,7 +141,7 @@ public class Banco
             cajaAhorro.extraer(1.0);
         }
 
-        /*
+        /**
          * Esta es la extracción número once y debe rechazarse
          * porque ya no quedan extracciones disponibles.
          */

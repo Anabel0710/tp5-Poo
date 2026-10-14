@@ -6,7 +6,7 @@
  * @author Rocio Anabel Gonzalez y Rodriguez Mercedes Antonella
  * @version 2.0 - 28/09/2026
  */
-public class CuentaBancaria
+public abstract class CuentaBancaria
 {
     private int nroCuenta;
     private double saldo;

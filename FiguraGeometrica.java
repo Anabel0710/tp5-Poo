@@ -32,5 +32,4 @@ public abstract class FiguraGeometrica
         System.out.println(" " + this.nombreFigura());
         System.out.println("Superficie: " + this.superficie());
     }
-    
 }

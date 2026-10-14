@@ -1,5 +1,5 @@
 #BlueJ class context
-#Mon Oct 05 17:55:16 ART 2026
+#Tue Oct 13 15:31:14 ART 2026
 comment0.target=Circulo
 comment0.text=\r\n Representa un c\u00EDrculo ubicado en el plano cartesiano.\r\n\r\n Un c\u00EDrculo es una especializaci\u00F3n de Elipse porque sus dos\r\n semiejes tienen la misma longitud\: el radio.\r\n\r\n @author Rocio Anabel Gonzalez y Rodriguez Mercedes Antonella\r\n @version 2.0\r\n
 comment1.params=p_radio p_centro

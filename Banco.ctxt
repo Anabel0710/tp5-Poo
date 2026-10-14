@@ -1,5 +1,5 @@
 #BlueJ class context
-#Tue Sep 29 15:43:44 ART 2026
+#Tue Oct 13 15:22:09 ART 2026
 comment0.target=Banco
 comment0.text=\r\n Clase ejecutable que prueba una caja de ahorro y una cuenta\r\n corriente pertenecientes a un mismo titular.\r\n Tambi\u00E9n verifica si el titular est\u00E1 cumpliendo a\u00F1os.\r\n\r\n @author Rocio Anabel Gonzalez y Rodriguez Mercedes Antonella\r\n @version 2.0 - 23/08/2026\r\n
 comment1.params=args
